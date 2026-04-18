@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let sectionEl: HTMLElement;
 	let visible = $state(false);
@@ -35,7 +36,7 @@
 		</div>
 
 		<div class="about__side">
-			<img src="/snap.jpeg" alt="Jayesh Bhadane" class="about__photo" />
+			<img src="{base}/snap.jpeg" alt="Jayesh Bhadane" class="about__photo" />
 			<div class="about__stats">
 				{#each stats as stat}
 					<span class="about__stat">{stat}</span>

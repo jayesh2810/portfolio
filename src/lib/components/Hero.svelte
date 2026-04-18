@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	import ParticleCanvas from './ParticleCanvas.svelte';
 
 	let loaded = $state(false);
@@ -20,7 +21,7 @@
 			Currently exploring agentic architectures and LLM pipelines.
 		</p>
 		<div class="hero__links">
-			<a href="/Jayesh%20Bhadane%20-%20Data%20Scientist%20Resume.pdf" target="_blank" rel="noopener" class="hero__link">resume</a>
+			<a href="{base}/Jayesh%20Bhadane%20-%20Data%20Scientist%20Resume.pdf" target="_blank" rel="noopener" class="hero__link">resume</a>
 			<span class="hero__sep">·</span>
 			<a href="https://github.com/jayesh2810" target="_blank" rel="noopener" class="hero__link">github</a>
 			<span class="hero__sep">·</span>
